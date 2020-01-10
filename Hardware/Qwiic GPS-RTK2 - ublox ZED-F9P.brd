@@ -16,7 +16,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -96,10 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
-<layer number="117" name="PM_Ref" color="26" fill="1" visible="yes" active="yes"/>
+<layer number="117" name="PM_Ref" color="26" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="119" name="PF_Ref" color="31" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="WFL_Ref" color="25" fill="1" visible="yes" active="yes"/>
+<layer number="119" name="PF_Ref" color="31" fill="1" visible="no" active="yes"/>
+<layer number="120" name="WFL_Ref" color="25" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -10783,7 +10783,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="16.7142" y1="19.94" x2="16.7132" y2="19.939" width="0.1524" layer="1"/>
 <via x="16.7132" y="19.939" extent="1-16" drill="0.3048"/>
 <via x="11.938" y="18.415" extent="1-16" drill="0.3048"/>
-<wire x1="7.62" y1="25.609340625" x2="7.62" y2="25.4" width="0.1524" layer="1"/>
 <via x="7.62" y="25.4" extent="1-16" drill="0.3048"/>
 <wire x1="16.7132" y1="19.939" x2="11.938" y2="19.939" width="0.1524" layer="16"/>
 <wire x1="11.938" y1="21.082" x2="7.62" y2="25.4" width="0.1524" layer="16"/>
@@ -10942,7 +10941,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="J5" pad="SHLD8"/>
 <contactref element="J5" pad="SHLD2"/>
 <contactref element="J5" pad="SHLD3"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" thermals="no">
 <vertex x="0" y="17.272"/>
 <vertex x="5.842" y="17.272"/>
 <vertex x="5.842" y="7.874"/>
@@ -10954,9 +10953,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <vertex x="5.842" y="7.874"/>
 <vertex x="0" y="7.874"/>
 </polygon>
-<wire x1="5.435" y1="17.02" x2="5.435" y2="17.02" width="0" layer="19" extent="1-16"/>
-<wire x1="5.435" y1="8.38" x2="5.435" y2="8.38" width="0" layer="19" extent="1-16"/>
-<wire x1="1.255" y1="8.38" x2="1.255" y2="8.38" width="0" layer="19" extent="1-16"/>
+<via x="3.048" y="12.7" extent="1-16" drill="0.3048"/>
+<via x="4.445" y="9.1948" extent="1-16" drill="0.3048"/>
+<via x="4.826" y="14.478" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="GPS_ANT1">
 <contactref element="J13" pad="FEED"/>
@@ -11224,9 +11223,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="CC2">
 <contactref element="R16" pad="2"/>
 <contactref element="J5" pad="B5"/>
-<wire x1="6.01" y1="10.95" x2="4.6" y2="10.95" width="0.1524" layer="1"/>
-<wire x1="4.025" y1="10.375" x2="4.025" y2="6.985" width="0.1524" layer="1"/>
-<wire x1="4.6" y1="10.95" x2="4.025" y2="10.375" width="0.1524" layer="1"/>
+<wire x1="6.01" y1="10.95" x2="4.3968" y2="10.95" width="0.1524" layer="1"/>
+<wire x1="3.898" y1="10.4512" x2="3.898" y2="7.112" width="0.1524" layer="1"/>
+<wire x1="3.898" y1="7.112" x2="4.025" y2="6.985" width="0.1524" layer="1"/>
+<wire x1="4.3968" y1="10.95" x2="3.898" y2="10.4512" width="0.1524" layer="1"/>
 </signal>
 <signal name="UNP_D+">
 <contactref element="J5" pad="A6"/>
@@ -11325,10 +11325,81 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="3,1,4651c221c29946e9"/>
 <approved hash="3,1,d8e8e090e8d7e798"/>
 <approved hash="3,1,bc1140614311bf61"/>
-<approved hash="3,1,7202511f667dabac"/>
 <approved hash="3,16,289422e45dc857b8"/>
 <approved hash="3,16,cdde3b03c60b7bed"/>
 <approved hash="3,16,bff8f388f205be75"/>
+<approved hash="7,39,be5d4f0a84860166"/>
+<approved hash="3,1,119fbbe1bb2d1153"/>
+<approved hash="3,1,6d91ffefff236d5d"/>
+<approved hash="19,1,e0a8ca0aca1e1734"/>
+<approved hash="19,1,30c33665330fc221"/>
+<approved hash="19,1,be3ebf7acf72ce36"/>
+<approved hash="19,1,e0a8ca0aca1e1734"/>
+<approved hash="19,1,723d73793f713e35"/>
+<approved hash="19,1,be3ebf7acf72ce36"/>
+<approved hash="19,1,47cfbf84ffcb9fda"/>
+<approved hash="19,1,2cab06040410d937"/>
+<approved hash="19,1,30c33665330fc221"/>
+<approved hash="19,1,38cace67f50af42f"/>
+<approved hash="19,1,4e334f77377f363b"/>
+<approved hash="19,1,723d73793f713e35"/>
+<approved hash="19,1,723d73793f713e35"/>
+<approved hash="19,1,be3ebf7acf72ce36"/>
+<approved hash="19,1,a676e3bac2656808"/>
+<approved hash="19,1,bdcbfa08a0834c92"/>
+<approved hash="19,1,cc7942d9fed79e25"/>
+<approved hash="19,1,47cfbf84ffcb9fda"/>
+<approved hash="19,1,bdcbfa08a0834c92"/>
+<approved hash="19,16,169a08b735df1c81"/>
+<approved hash="19,16,ff4fbaf2234f5181"/>
+<approved hash="19,16,ceb9cf583c503db1"/>
+<approved hash="19,16,9318baacaff4e7ee"/>
+<approved hash="19,16,eb53168b51350782"/>
+<approved hash="19,16,aa9a80ccefb96e80"/>
+<approved hash="19,16,fea5ff44184c19ad"/>
+<approved hash="19,16,e52a0ba3e13b74c2"/>
+<approved hash="19,16,f3a8c6ad0238db18"/>
+<approved hash="19,16,992b07daaf42c6c1"/>
+<approved hash="19,16,ea9b16c282a9fb81"/>
+<approved hash="19,16,494e7087de396281"/>
+<approved hash="19,16,b2bbb3587a507bb3"/>
+<approved hash="19,16,71182cd8c0807cee"/>
+<approved hash="19,16,f9d32b14fa0f0db8"/>
+<approved hash="19,16,452b89aeb6365fc3"/>
+<approved hash="19,1,723d73793f713e35"/>
+<approved hash="4,1,7130aa58f7ac1ec0"/>
+<approved hash="4,1,2b892b1123f12369"/>
+<approved hash="4,1,8f62b7a8a86ed52e"/>
+<approved hash="4,1,2b8d2bbd235d236d"/>
+<approved hash="4,1,a4b8cf7c77358c7c"/>
+<approved hash="4,1,0300d8a88b7c6b50"/>
+<approved hash="4,1,abd7ea7e4fa5c206"/>
+<approved hash="4,1,ad80ad18a978a9e0"/>
+<approved hash="4,1,2b892bb123512369"/>
+<approved hash="4,1,2b8d2b1d23fd236d"/>
+<approved hash="4,1,d248b9cc0865f88c"/>
+<approved hash="4,1,ad84adb4a9d4a9e4"/>
+<approved hash="4,1,ad80adb8a9d8a9e0"/>
+<approved hash="4,1,ad84ad14a974a9e4"/>
+<approved hash="4,1,d9e7988e3375b796"/>
+<approved hash="4,1,f992c118d73ea1de"/>
+<approved hash="4,16,7130aa58f7ac1ec0"/>
+<approved hash="4,16,2b892b1123f12369"/>
+<approved hash="4,16,8f62b7a8a86ed52e"/>
+<approved hash="4,16,ad80adb8a9d8a9e0"/>
+<approved hash="4,16,ad84ad14a974a9e4"/>
+<approved hash="4,16,d9e7988e3375b796"/>
+<approved hash="4,16,f992c118d73ea1de"/>
+<approved hash="4,16,2b8d2bbd235d236d"/>
+<approved hash="4,16,a4b8cf7c77358c7c"/>
+<approved hash="4,16,0300d8a88b7c6b50"/>
+<approved hash="4,16,abd7ea7e4fa5c206"/>
+<approved hash="4,16,ad80ad18a978a9e0"/>
+<approved hash="4,16,2b892bb123512369"/>
+<approved hash="4,16,2b8d2b1d23fd236d"/>
+<approved hash="4,16,d248b9cc0865f88c"/>
+<approved hash="4,16,ad84adb4a9d4a9e4"/>
+<approved hash="3,1,7202511f667dabac"/>
 </errors>
 </board>
 </drawing>
